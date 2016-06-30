@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Demo
 //
-//  Created by Xiudong on 16/6/24.
+//  Created by Marlon on 16/6/24.
 //  Copyright © 2016年 test. All rights reserved.
 //
 
@@ -10,12 +10,25 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+ // 
+    
+    public var UIHeight = UIScreen.main().bounds.height
+    public var UIWidth = UIScreen.main().bounds.width
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        window = UIWindow(frame: CGRect(x: 0, y: 0, width: UIWidth, height: UIHeight))
+        window?.backgroundColor = UIColor.cyan()
+        window?.makeKeyAndVisible()
+        
+        
+        
         // Override point for customization after application launch.
+        
+        
         return true
     }
 
