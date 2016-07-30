@@ -41,16 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         rootTabBar?.viewControllers = [nav1,nav2,nav3,nav4]
         rootTabBar?.tabBar.barTintColor = UIColor.cyan()
-        //字典
-     //   UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(objectsAndKeys: UIColor.whiteColor(),UITextAttributeTextColor,nil), for: UIControlState.selected)
-        var titleHighlightedColor: UIColor = UIColor.green()
-     //   UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(objectsAndKeys: titleHighlightedColor,UITextAttributeTextColor,nil), for: UIControlState.selected)
-
+    
+    
+     
        
-        
         // 注意此处 必须初始化的时间指定渲染方式 才会生效  其他情况下 不会报错 但是不生效!
-      //  UITabBarItem.appearance().setTitleTextAttributes(<#T##attributes: [String : AnyObject]?##[String : AnyObject]?#>, for: <#T##UIControlState#>)
-        
         let image11 = UIImage(named: "my-unselected.png")?.withRenderingMode(.alwaysOriginal)
         let image12 = UIImage(named: "my-selected.png")?.withRenderingMode(.alwaysOriginal)
         let tabbarItem01 = UITabBarItem(title: "我的", image: image11, selectedImage:image12)
@@ -58,15 +53,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         firstVC.tabBarItem = tabbarItem01
         
         
+        //let tabbarttemColor = [NSFontAttributeName:String(UIColor.red())]
+      //  let textAttributes = [NSFontAttributeName:String(UIFont.systemFont(ofSize: 18)), NSShadowAttributeName:String(UIColor.white())]
+
+        
+       //UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName:String(UIFont.systemFont(ofSize: 100))], for: .normal)
         
         
-        //    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-        //  [UIColor whiteColor], UITextAttributeTextColor,
-        //nil] forState:UIControlStateNormal];
-        //UIColor *titleHighlightedColor = [UIColor greenColor];
-        //[[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-        //titleHighlightedColor, UITextAttributeTextColor,
-        //nil] forState:UIControlStateSelected]
+    
         
         // Override point for customization after application launch.
         
